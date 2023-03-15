@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="new.css" />
+  </head>
+  <body class="ignielPelangi">
+    <!-- Form Sign Up -->
+    <div class="container">
+      <div class="logs">
+        <form action="/" id="form">
+          <h2 class="sup">Sign Up Here</h2>
+
+          <div class="input-control">
+            <label for="username">username</label>
+            <input id="username" type="text" name="username" placeholder="enter your username" required />
+            <div class="error"></div>
+          </div>
+          <div class="input-control">
+            <label for="email">email</label>
+            <input id="email" type="email" name="email" placeholder="enter your email" />
+            <div class="error"></div>
+          </div>
+          <div class="input-control">
+            <label for="password">password</label>
+            <input id="password" type="password" name="password" placeholder="enter your username" />
+            <div class="error"></div>
+          </div>
+          <div class="input-control">
+            <label for="password2">retype password</label>
+            <input id="password2" type="password" name="password2" placeholder="enter your username" />
+            <div class="error"></div>
+          </div>
+
+          <button type="submit" class="btns">Register</button>
+
+          <p class="links">
+            Already an account ?
+            <br />
+            <a href="login.html">Sign in here</a>
+          </p>
+        </form>
+      </div>
+    </div>
+    <!-- Form Sign Up Selesai -->
+    <script defer src="signup.js"></script>
+  </body>
+</html>

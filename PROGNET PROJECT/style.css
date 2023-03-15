@@ -1,0 +1,632 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*----------------------- Sign In -----------------------*/
+.main {
+  background-color: #e2edff;
+  background-image: url(img/cover.jpg);
+  background-size: cover;
+  height: 715px;
+}
+
+.navbar1 {
+  width: 1500px;
+  height: 75px;
+  margin: auto;
+}
+
+.icon {
+  width: 200px;
+  float: left;
+  height: 70px;
+}
+
+.logo {
+  color: #c78855;
+  font-size: 45px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  padding-left: 20px;
+  float: left;
+  padding-top: 10px;
+  margin-right: 10px;
+}
+
+.menu {
+  width: 400px;
+  float: left;
+  height: 90px;
+}
+
+.menu ul {
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu ul li {
+  list-style: none;
+  margin-left: 50px;
+  margin-top: 30px;
+  font-size: 16px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  transition: 0.4s ease-in-out;
+}
+
+.menu ul li a:hover {
+  color: #c78855;
+}
+
+.search1 {
+  width: 330px;
+  float: left;
+  margin-left: 240px;
+}
+
+.srch {
+  font-family: "Times New Roman", Times, serif;
+  width: 200px;
+  height: 40px;
+  background: transparent;
+  border: 1px solid #c78855;
+  margin-top: 19px;
+  color: white;
+  border-right: none;
+  font-size: 16px;
+  float: left;
+  padding: 10px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.btn1 {
+  width: 100px;
+  height: 40px;
+  background: #c78855;
+  border: 2px solid #c78855;
+  margin-top: 19px;
+  font-size: 15px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.btn1 a:hover {
+  color: white;
+}
+
+.btn1 a:focus {
+  outline: none;
+}
+
+.btn1 a:focus {
+  outline: none;
+}
+
+.btn1 a {
+  text-decoration: none;
+  color: black;
+}
+
+.content {
+  width: 1200px;
+  height: auto;
+  margin: auto;
+  color: white;
+  position: relative;
+}
+
+.content .par {
+  padding-left: 20px;
+  padding-bottom: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+  line-height: 30px;
+}
+
+.content h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 50px;
+  padding-left: 20px;
+  margin-top: 9%;
+  letter-spacing: 2px;
+}
+
+.content span {
+  color: #c78855;
+}
+
+.content .cn {
+  width: 120px;
+  height: 40px;
+  background: #c78855;
+  border: none;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+.content .cn a {
+  text-decoration: none;
+  color: black;
+  transition: 0.3s ease;
+}
+
+.cn:hover {
+  background-color: white;
+}
+
+/* ---------------Block Sign In--------------- */
+.box {
+  width: 250px;
+  height: 420px;
+  background: black;
+  opacity: 0.7;
+  position: absolute;
+  top: 120px;
+  left: 870px;
+  border-radius: 10px;
+  padding: 25px;
+  overflow: hidden;
+}
+
+.box::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  width: 250px;
+  height: 400px;
+  background: linear-gradient(0deg, transparent, #45f3ff, #45f3ff);
+  transform-origin: bottom right;
+  animation: animate 6s linear infinite;
+}
+.box::after {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  width: 250px;
+  height: 400px;
+  background: linear-gradient(0deg, transparent, #45f3ff, #45f3ff);
+  transform-origin: bottom right;
+  animation: animate 6s linear infinite;
+  animation-delay: -3s;
+}
+
+.log {
+  position: absolute;
+  inset: 2px;
+  border-radius: 8px;
+  background: black;
+
+  z-index: 10;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    trasform: rotate(360deg);
+  }
+}
+#form {
+  position: relative;
+  text-align: center;
+  padding: 20px;
+}
+
+#form h2 {
+  width: 220px;
+  font-family: sans-serif;
+  text-align: center;
+  color: #c78855;
+  font-size: 22px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: white;
+  border-radius: 10px;
+  margin: 2px;
+  padding: 8px;
+}
+
+.input-control {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-control input {
+  background: transparent;
+  border-bottom: 1px solid #c78855;
+  color: white;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  display: block;
+  font-size: 12px;
+  padding: 10px;
+  width: 85%;
+}
+
+.input-control input:focus {
+  outline: 0;
+}
+
+.input-control.success input {
+  border-color: rgb(56, 165, 56);
+}
+.input-control.error input {
+  border-color: rgb(154, 44, 22);
+}
+
+.error {
+  color: red;
+  text-align: start;
+}
+
+label {
+  text-align: start;
+  padding-top: 30px;
+  color: white;
+  font-size: 12px;
+}
+
+#form input:focus {
+  outline: none;
+}
+
+::placeholder {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.btnn {
+  width: 240px;
+  height: 40px;
+  background: #c78855;
+  border: none;
+  margin-top: 30px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  transition: 0.4s ease;
+}
+
+.btnn:hover {
+  background-color: white;
+  color: #c78855;
+}
+
+.btnn a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.link a {
+  text-decoration: none;
+  color: #c78855;
+}
+
+.liw {
+  padding-bottom: 10px;
+  padding-top: 15px;
+  text-align: center;
+
+  color: white;
+}
+.bi-google {
+  color: white;
+}
+.bi-google:hover {
+  color: #e96f0c;
+}
+
+.bi-apple {
+  color: white;
+  padding-left: 38px;
+}
+.bi-apple:hover {
+  color: #e96f0c;
+}
+
+.bi-messenger {
+  color: white;
+  padding-left: 38px;
+}
+.bi-messenger:hover {
+  color: #e96f0c;
+}
+
+/*------------------------------------------------------- Sign Up -------------------------------------------------------*/
+.icons {
+  width: 200px;
+  float: left;
+  height: 70px;
+}
+
+.logos {
+  color: #c78855;
+  font-size: 65px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding-left: 650px;
+  float: left;
+  padding-top: 15px;
+  margin-right: 10px;
+}
+.logoos {
+  color: #c78855;
+  font-size: 15px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding-left: 650px;
+  padding-top: 25px;
+}
+
+.boxs {
+  width: 280px;
+  height: 480px;
+  opacity: 0.8;
+  position: absolute;
+  top: 120px;
+  left: 800px;
+  border-radius: 10px;
+  padding: 25px;
+  overflow: hidden;
+}
+
+.boxs::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  width: 250px;
+  height: 400px;
+  background: linear-gradient(0deg, transparent, #1111e7, #1111e7);
+  transform-origin: bottom right;
+  animation: animate 6s linear infinite;
+}
+.boxs::after {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  width: 250px;
+  height: 400px;
+  background: linear-gradient(0deg, transparent, #cd1313, #cd1313);
+  transform-origin: bottom right;
+  animation: animate 6s linear infinite;
+  animation-delay: -3s;
+}
+
+.logs {
+  position: absolute;
+  inset: 2px;
+  border-radius: 8px;
+  background: white;
+
+  z-index: 10;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.forms {
+  position: relative;
+  float: left;
+  left: 40px;
+  top: 29px;
+}
+
+.forms h2 {
+  width: 220px;
+  font-family: sans-serif;
+  text-align: center;
+  color: #c78855;
+  font-size: 22px;
+  padding-bottom: 12px;
+  background-color: white;
+  border-radius: 10px;
+  margin: 2px;
+  padding: 8px;
+}
+
+.forms input {
+  width: 240px;
+  height: 35px;
+  background: transparent;
+  border-bottom: 1px solid #c78855;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  color: black;
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-top: 30px;
+  font-family: sans-serif;
+}
+
+.forms input:focus {
+  outline: none;
+}
+
+::placeholder {
+  color: grey;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.btns {
+  width: 240px;
+  height: 40px;
+  background: wheat;
+  border: none;
+  margin-top: 30px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  transition: 0.4s ease;
+}
+
+.btns:hover {
+  background-color: #c78855;
+}
+
+.btns a {
+  text-decoration: none;
+  color: rgb(45, 42, 42);
+  font-weight: bold;
+}
+
+.forms .links {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  padding-top: 20px;
+  text-align: center;
+  padding-right: 70px;
+  color: rgb(124, 119, 119);
+}
+
+.links a {
+  text-decoration: none;
+  color: rgb(231, 170, 170);
+}
+
+.link a:hover {
+  color: #c78855;
+}
+.links a:hover {
+  color: #dc7d2f;
+}
+
+.photo #p1 {
+  float: left;
+  padding-left: 250px;
+}
+.photo #p2 {
+  float: left;
+  left: 270px;
+  position: absolute;
+}
+
+/* -----------------------------------------------INDEX HTML-------------------------------------------------- */
+.navbar {
+  background-color: #e96f0c;
+}
+
+.navbar-brand {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+.carousel-item {
+  margin-top: 90px;
+  width: 1400px;
+  height: 450px;
+  margin-left: 4rem;
+}
+#rowrw {
+  text-align: center;
+  padding-top: 20px;
+  border: 3px;
+  border-radius: 100%;
+}
+#dashboard {
+  min-height: 3000px;
+}
+
+.display-6 {
+  padding-top: 4rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-style: italic;
+  color: rgb(129, 120, 120);
+}
+
+.col-md-4 {
+  width: 350px;
+  height: 300px;
+  text-align: center;
+}
+
+.card,
+.card * {
+  box-sizing: border-box;
+  transition: 400ms;
+}
+
+.card-title {
+  text-align: center;
+  margin-top: 4px;
+  color: black;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.card-body {
+  position: absolute;
+  bottom: -33px;
+  text-align: center;
+  color: black;
+  font-size: 0.75rem;
+  opacity: 0;
+}
+.harga {
+  font-size: 0.95rem;
+}
+
+.card:hover .card-image {
+  transform: translateY(-48px);
+}
+.card:hover .card-image img {
+  transform: translate(-16px, -42px) rotate(-16deg) scale(1.4);
+}
+
+.card:hover .card-body {
+  opacity: 1;
+}
+
+/* --------------------------ABOUT--------------------------*/
+#col-svg {
+  margin-bottom: 50px;
+  width: 350px;
+}
+
+#col-p {
+  margin-top: 50px;
+}
+
+#aboutbody {
+  height: 500px;
+}
+
+#bi a {
+  text-decoration: none;
+  color: black;
+}
+#bi a:hover {
+  color: orange;
+}
+
+.linee p {
+  text-align: center;
+  font-weight: 300;
+}
